@@ -1,0 +1,750 @@
+
+
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html{
+    scroll-behavior:smooth ;
+    scroll-padding-top:100px;
+}
+
+body{
+    width: 100%;
+    color: white;
+    font-family: serif;
+
+}
+
+:root{
+--black: #131415;
+--grey: #2d3640;
+}
+
+.section-container{
+    background-color: var(--black);
+    height: 100%;
+    width: auto;
+    
+}
+
+.section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 0;
+    margin: 0 auto;
+    width: 97%;
+    max-width: 1300px;
+}
+
+/* heacer  */
+
+.header-container{
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+   
+}
+.header{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1400px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 80px 0 50px;
+}
+.logo-container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.logo-container>img{
+    height: 100%;
+    width: auto;
+}
+.navbar, .navbar-list{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.navbar-list{
+    gap: 40px   ;
+}   
+.navbar i{
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    display: none;
+
+}
+
+#toggle-menu{
+    display: none;
+}
+
+.navbar a{
+    color: white;
+    font-size: 20px;
+}
+
+.navbar-list li:last-child > a{
+    border: 1px solid white;
+    font-size: 15px;
+    padding: 8px 40px;
+    border-radius: 5px;
+    transition: all 0.6s ease ;
+
+}
+.navbar-list li:last-child > a:hover{
+    background-color: white;
+    color: var(--grey);
+    transition: all 0.6s ease;
+   
+    font-size: 15px;
+}
+    
+  
+@media (max-width:990px){
+    .header{
+        padding: 0 50px 0 10px;
+        ;}
+        .navbar i {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 200px;
+          }
+        
+          .navbar-list{
+            position: absolute;
+            background-color: var(--black);
+            flex-direction: column;
+            top: 100px;
+            right: 0;
+            width: 100%;
+            height: 250%;
+            z-index: 9999;
+            display: none;
+          }
+        
+          #toggle-menu:checked + .navbar-list {
+            display: flex;
+          }}
+    
+
+
+
+/* fin de header */
+/* Hero  */
+
+#home{
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 70px 50px;
+    background-image: url(/Integrador-Fifa/Assets/fondo\ l\ y\ r.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex: 1 1 450px;
+    height: 650px;
+}
+
+.description-container{
+    display: flex;
+   justify-content: center;
+   align-items: center;
+    flex-direction: column;
+    flex: 1 1 50%;
+    gap: 40px   ;
+    background-color: #131415;
+    height: auto;
+    max-width: 600px;
+    height: 300px;
+    border-radius: 50px;
+    opacity: 95%    ;
+    
+}
+.text-container,.button-container{
+    max-width: max(40%, 300px);
+}
+
+.description-container h1{
+    font-size: 45px;
+    line-height: 45px;
+}
+.description-container p{
+    font-size: 15px;
+    font-weight: 300;
+}
+.button-container>button{
+    cursor: pointer;
+    background-color: #ffc200;
+    border: 0 solid black;
+    outline: none;
+    width: 180px;
+    height: 40px;
+    color:black;
+    font-weight: 700;
+    font-size: 14px;
+    transition: all 0.4s ease-out;
+    border-radius: 10px;
+}
+.button-container>a>button{
+    cursor: pointer;
+    background-color: #ffc200;
+    border: 0 solid black;
+    outline: none;
+    width: 180px;
+    height: 40px;
+    color:black;
+    font-weight: 700;
+    font-size: 14px;
+    transition: all 0.4s ease-out;
+    border-radius: 10px;
+}
+.button-container>button:hover{
+    background-color: #c79900;
+    transition: all 0.4s ease-in;
+}
+.button-container>a>button:hover{
+    background-color: #c79900;
+    transition: all 0.4s ease-in;
+}
+
+/* .hero-img{
+    background-image: url(/Integrador-Fifa/Assets/fifa_22_segunda_foto.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex: 1 1 550px;
+    height: 450px; */
+
+    
+/* } */
+
+.portada{
+    width: 100%;
+    height: 100%;
+;
+}
+
+@media (max-width:750px ){
+    
+    .description-container{
+        justify-content: center;
+        align-items: center;
+    }
+    .text-container, .button-container{
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+/* Fin de Home */
+
+/* Inicio about-Us */
+
+#about-us{
+    gap: 15px;
+    flex-wrap: wrap;
+    
+}
+
+
+.about-img{
+    background-image: url(https://dlprivateserver.com/wp-content/uploads/2021/08/FIFA-22-EA-Sports-celebra-el-paso-de-Lionel-Messi.jpg);
+    border: 5px;
+    display: flex;
+     flex: 1 1 300px;
+     gap: 40px;
+    height: 250px;
+    max-width: 300px;
+    border-radius: 5px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.about-content{
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    flex: 1 1 75%;
+    gap: 20px   ;
+    
+   
+    align-items: center;
+   
+   
+    
+}
+.about-content p{
+    font-size: 16px;
+}
+.section-tittle{
+    font-weight: 700;
+    font-size: 32px;
+    text-align: center;
+
+}
+.section-p,.section-ptwo{
+font-size: 15px;
+font-weight: 400;
+text-align:justify;
+}
+@media (max-width:750px ){
+    
+    .about-content{
+        justify-content: center;
+        align-items: center;
+       
+    }
+    .about-content p{
+        text-align: center;
+       
+    }
+   
+}
+
+@media (max-width:850px){
+    .button-container{
+        display: flex;
+    }
+}
+
+
+
+/* <!-- Fin about us  --> */
+
+/* Inicio Areas */
+
+#areas{
+    flex-direction: column;
+    gap: max(120px,10%);
+
+}
+.tittle-container{
+display: flex;
+
+width: 100%;
+text-align: center;
+justify-content: center;
+}
+.tittle-container h2{
+    font-size: 30px;
+
+}
+
+.areas-card-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 75%;
+    gap: 0 90px   ;
+}
+
+.areas-card:hover{
+transition: all 1s ease;
+transform: scale(1.05);
+}
+
+.areas-card{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    flex: 1 1 250px;
+    height: 360px;
+    background-color: var(--grey);
+    max-height: 360px;
+    max-width: 250px;
+    cursor: pointer;
+
+    
+    position: relative;
+}
+
+
+.areas-card-img{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+    width: 100%;
+    border: radius 50%; ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+.card-content{
+    position: absolute;
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100%;
+   
+   flex-wrap: wrap;
+}
+.card-content h3, .section-p-small {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.section-p-small p{
+    font-size: 1px;
+}
+
+
+
+.areas-card:first-child .areas-card-img{
+    background-image: url(/Integrador-Fifa/Assets/ut.jpg);
+}
+.areas-card:nth-child(2) .areas-card-img{
+    background-image: url(/Integrador-Fifa/Assets/fifa22-careermode-4x5.jpg.adapt.crop16x9.652w.jpg);
+
+}
+
+.areas-card:last-child .areas-card-img{
+background-image: url(/Integrador-Fifa/Assets/fifa22-proclubs-4x5.jpg.adapt.crop16x9.652w.jpg);
+}
+
+
+/* Fin de areas  */
+
+/* Inicio Top Trading  */
+
+
+#top-trading{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    
+}
+
+.trading-cards-container{
+    width: 350px;
+    height: 300px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--black);
+    border-radius: 5px;
+}
+
+.trading-titulo{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: gray;
+    margin-bottom: 50px;
+}
+
+.trading-card{
+    
+    height: 150px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+    gap: 20px;
+    color: white;
+
+   
+}
+
+.trading-card>a{
+    color: white;
+    display: flex;
+    
+    
+    background-color: var(--grey);
+    width: 335px;
+    height: 500px;
+   font-size: 13px;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+}
+.trading-card>a:hover{
+    background-color: #c79900;
+    transition: 0.5s linear all;
+
+}
+.trading-card>a>span{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+}
+.trading-card>a>img{
+    width: 28px;
+    height: auto;
+}
+
+.mas p{
+    margin-left: 100%;
+    font-size: 13px;
+    cursor: pointer;
+
+}
+
+.trading-card-plataforma{
+    height: 150px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+    gap: 20px;
+   ;
+   padding-bottom: 20px;
+}
+.trading-card-plataforma a{
+    color: white;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+   
+    
+    width: 75px;
+    height: 190px;
+   font-size: 13px;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.trading-card-plataforma i{
+    font-size: 25px;
+}
+
+.trading-card-plataforma a:first-child
+{
+    background-color: #1515e9;
+}
+
+.trading-card-plataforma a:nth-child(2){
+    background-color: green;
+}
+
+.trading-card-plataforma a:nth-child(3){
+    background-color: #f14607;
+}
+
+
+
+.divider{
+    width: min(90%, 600px);
+    margin-top: 80px;
+    height: 3px;
+    background-color: #c79900;
+}
+
+/* Fin section trading  */
+
+/* Footer  */
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    max-width: 1300px;
+    gap: 70px;
+    padding: 30px;
+
+}
+
+.copy-footer{
+    text-align: justify;
+    font-weight: 700;
+    font-size: 20px;
+
+}
+
+.second-footer{
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 14 px;
+    min-height: 100px;
+}
+
+.redes-footer i{
+    padding: 5px;
+}
+
+.terms-footer{
+   display: flex;
+   gap: 25px;
+}
+
+.terms-footer a{
+    color: white;
+    font-weight: 300;
+}
+
+
+@media (max-width:920px) {
+    .footer{
+        gap: 40px;
+    }
+    .copy-footer{
+        max-width: 600px;
+        text-align: center;
+    }
+    .second-footer{
+        align-items: center;
+        gap: 20px;
+    }
+    .terms-footer{
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+/* Fin footer  */
+
+/* Login  */
+
+.login{
+    max-width: 600px;
+    width: 97%;
+    height: 360px;
+    background-color: #2d3640;
+    margin: 0 auto;
+    margin-top: 180px;
+    box-shadow: 7px 13px 37px #000;
+    padding: 20px 30px;
+    border-top: 4 px solid black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex: 1 1 50%;
+    gap: 40px;
+    background-color: #131415;
+    height: auto;
+    max-width: 600px;
+    height: 300px;
+    border-radius: 50px;
+    opacity: 95%; */
+
+.login h5{
+    margin: 0;
+    text-align: center;
+    height: 40px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid ;
+    font-size: 20px;
+}
+
+.datos{
+    width: 100%;
+    border: 1px solid #131415;
+    margin-bottom: 15px;
+    padding: 11px 10 px;
+    background-color: #131415;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+
+
+}
+.links{
+    display: flex;
+    flex-direction: column;
+}
+.links a{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+
+}
+
+.boton-container>button{
+    cursor: pointer;
+    background-color: #ffc200;
+    border: 0 solid black;
+    outline: none;
+    width: 180px;
+    height: 40px;
+    color:black;
+    font-weight: 700;
+    font-size: 14px;
+    transition: all 0.4s ease-out;
+    border-radius: 10px;
+}
+.boton-container>button:hover{
+    background-color: #c79900;
+    transition: all 0.4s ease-in;
+}
+
+.body2{
+    background-image: url(/Integrador-Fifa/Assets/fondo\ l\ y\ r.jpeg);
+    width: 100%;
+    min-height: 100vh;
+    flex-wrap: wrap;
+    flex: 1 1 350px;
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+}
+
+.boton-container>a>button{
+    cursor: pointer;
+    background-color: #ffc200;
+    border: 0 solid black;
+    outline: none;
+    width: 180px;
+    height: 40px;
+    color:black;
+    font-weight: 700;
+    font-size: 14px;
+    transition: all 0.4s ease-out;
+    border-radius: 10px;
+}
+
+.boton-container>a>button:hover{
+    background-color: #c79900;
+    transition: all 0.4s ease-in;
+}
+
