@@ -153,7 +153,7 @@ align-items: center;
     flex-wrap: wrap;
     gap: 20px;
     padding: 70px 50px;
-    background-image: url(/Integrador-Fifa/Assets/fondo\ l\ y\ r.jpeg);
+    background-image: url(https://i.blogs.es/ca1b1c/fifa-22-1/1366_2000.jpeg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -416,15 +416,15 @@ transform: scale(1.05);
 
 
 .areas-card:first-child .areas-card-img{
-    background-image: url(/Integrador-Fifa/Assets/ut.jpg);
+    background-image: url(img/ut.jpg);
 }
 .areas-card:nth-child(2) .areas-card-img{
-    background-image: url(/Integrador-Fifa/Assets/fifa22-careermode-4x5.jpg.adapt.crop16x9.652w.jpg);
+    background-image: url(img/fifa22-careermode-4x5.jpg.adapt.crop16x9.652w.jpg);
 
 }
 
 .areas-card:last-child .areas-card-img{
-background-image: url(/Integrador-Fifa/Assets/fifa22-proclubs-4x5.jpg.adapt.crop16x9.652w.jpg);
+background-image: url(img/fifa22-proclubs-4x5.jpg.adapt.crop16x9.652w.jpg);
 }
 
 
@@ -653,18 +653,7 @@ background-image: url(/Integrador-Fifa/Assets/fifa22-proclubs-4x5.jpg.adapt.crop
     align-items: center;
     flex-direction: column;
 }
-/* display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    flex: 1 1 50%;
-    gap: 40px;
-    background-color: #131415;
-    height: auto;
-    max-width: 600px;
-    height: 300px;
-    border-radius: 50px;
-    opacity: 95%; */
+
 
 .login h5{
     margin: 0;
@@ -717,7 +706,7 @@ background-image: url(/Integrador-Fifa/Assets/fifa22-proclubs-4x5.jpg.adapt.crop
 }
 
 .body2{
-    background-image: url(/Integrador-Fifa/Assets/fondo\ l\ y\ r.jpeg);
+    background-image: url(https://i.blogs.es/ca1b1c/fifa-22-1/1366_2000.jpeg);
     width: 100%;
     min-height: 100vh;
     flex-wrap: wrap;
